@@ -1,4 +1,5 @@
 {
+  "homepage": "http://ahmdfajri14.github.io/React-MovieDB",
   "name": "react-moviedb",
   "version": "0.1.0",
   "private": true,
@@ -19,6 +20,8 @@
     "typescript": "^3.9.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -27,16 +30,8 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "browserslist": [],
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
